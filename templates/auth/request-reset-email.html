@@ -1,0 +1,45 @@
+{% extends 'nav.html' %}
+{% block title %} 
+AispaceX Reset
+{% endblock title %} 
+{% block style %}
+<style>
+   
+</style>
+{% endblock style %}
+{% block body %} 
+<section id='contact' class='contact'>
+    <div class='container'>
+
+        <div class='section-title' data-aos='fade-up'>
+<div class='row'>
+    <div class='col-md-2'></div>
+    <div class='col-md-4'>
+        <br>
+<h1 data-aos='fade-up'>Request a Reset Link</h1> 
+<div class='container' data-aos='fade-up' data-aos-delay='400'>
+<form  action="/ecommerceauth/login/" method="post">{% csrf_token %}
+    <input type='hidden' name='csrfmiddlewaretoken' value='QHhYabuHOeH3vzXz16fh10jvwKVWei3kCEe5HX%dzimQ3WqMgCtlXb4T'>
+    
+      <br>
+      <label  for="email">Email</label>
+      <div class='form-group'>
+      <input type="email" class="form-control " id="email" name="email" required>
+      </div>
+  <br>
+    <button type="submit" class="btn">Submit</button>
+    <br>
+    <hr>
+  <a href='/ecommerceauth/login/'> Go back? </a>
+   <br>
+   <br>
+   
+  </form>
+</div>
+</div>
+    <div class='col-md-6'></div>
+</div>
+</div>
+</div>
+</section>
+{% endblock body %}
